@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/article1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Композиционный центр"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/article1_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Несмотря на слово «центр» в названии, композиционный центр далеко не всегда находится в геометрическом центре плоскости. Такая композиция будет выглядеть скучно. Композиционный центр обычно содержит главное послание, и его выделяют цветом, светлотой, иногда он может находиться вообще в углу. Более того, композиционных центров может быть даже несколько! Очень важно следить, чтобы композиционный центр считывался не только сюжетно, но и графически."
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/composition_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composition_center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Пример композиционного центра"/>
+
+        <TextView
+            android:id="@+id/article2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Правило третей"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/article2_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Это правило можно назвать более простой альтернативой золотому сечению. Поскольку тут не нужно вычислять никаких соотношений, а принцип работает безотказно, его используют во многих сферах: в кино, на снимках рекламных кампаний, открытках, фотографиях или в работах художников.
+Работает это правило очень просто. Изображение делится линиями на трети по вертикали и по горизонтали. На пересечении этих линий или самих линиях находятся ключевые объекты. Композиция в этом случае получается динамичной, но при этом сбалансированной."
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/rule_of_thirds_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rule_of_thirds"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Пример правила третей"/>
+
+        <TextView
+            android:id="@+id/article3_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Золотое сечение"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/article3_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Соотношение сторон в этом прямоугольнике — 1 к 1,618. Именно такая пропорция считается наиболее гармоничной для соотношений частей в композиции.На основе этой пропорции строится золотая спираль. Если расположить главные элементы композиции на её линии или же в ключевых точках, изображение будет выглядеть более гармонично — то есть приятно для глаза."
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/golden_ratio_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/golden_ratio"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Пример золотого сечения"/>
+
+        <TextView
+            android:id="@+id/article4_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ракурс"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/article4_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Смелые и необычные ракурсы всегда привлекают внимание. Но к тому, чтобы создать сцену с необычным ракурсом, нужно подготовиться и посмотреть множество изображений. Иначе результат может выглядеть неестественно или даже уродливо. Но если всё сделано грамотно — изображение произведёт эффект."
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/perspective_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/perspective_info"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Пример ракурса"/>
+
+        <TextView
+            android:id="@+id/article5_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Атмосфера и эмоции"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/article5_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Композиция, ландшафт, цвета могут хорошо подчеркнуть главную эмоцию, заложенную в сюжете. Не просто так нечто позитивное ассоциируется у людей с чистыми и яркими оттенками, а фильмы ужасов — с мрачной атмосферой заброшенных домов и пустынных улиц."
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/atmosphere_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/atmosphere_and_emotions"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Пример атмосферы и эмоций"/>
+
+    </LinearLayout>
+</ScrollView>

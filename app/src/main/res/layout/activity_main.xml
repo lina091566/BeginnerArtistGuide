@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">  <!--  Добавили фон здесь! -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Beginner Artist Guide!"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button_learning_materials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Учебные Материалы"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_color_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Рандомная палитра"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_drawing_ideas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Идеи для рисования"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_drawing_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Холст для рисования"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_drawing_collage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Коллаж рисунков"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Разработано Alina &amp; Evelina"
+            android:textColor="#1B1B1B"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

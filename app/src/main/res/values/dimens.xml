@@ -1,0 +1,4 @@
+<resources>
+    <!-- ... другие размеры ... -->
+    <dimen name="drawing_height">300dp</dimen>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Панель инструментов -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#EEEEEE">
+
+            <!-- Кнопки цветов -->
+            <Button
+                android:id="@+id/btn_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Красный"
+                android:textColor="#FFFFFF"
+                android:background="#FF0000"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Красный" />
+
+            <Button
+                android:id="@+id/btn_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Синий"
+                android:textColor="#FFFFFF"
+                android:background="#0000FF"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Синий" />
+
+            <Button
+                android:id="@+id/btn_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зелёный"
+                android:textColor="#FFFFFF"
+                android:background="#00FF00"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Зелёный" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Жёлтый"
+                android:textColor="#FFFFFF"
+                android:background="#FFFF00"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Жёлтый" />
+
+            <!-- Ластик -->
+            <Button
+                android:id="@+id/btn_eraser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ластик"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Ластик" />
+
+            <!-- Очистить -->
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Очистить"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:contentDescription="Очистить холст" />
+
+            <!-- Внутри LinearLayout с инструментами, после кнопки "Очистить" -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:contentDescription="Сохранить рисунок" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Холст для рисования -->
+    <com.example.beginnerartistguide.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+</LinearLayout>
