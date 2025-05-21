@@ -2,44 +2,40 @@ package com.alinaevelina.beginnerartistguide
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.alinaevelina.beginnerartistguide.DrawingCanvasActivity
+import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val learningMaterialsButton = findViewById<Button>(R.id.button_learning_materials)
-        val colorCircleButton = findViewById<Button>(R.id.button_color_circle)
-        val drawingIdeasButton = findViewById<Button>(R.id.button_drawing_ideas)
-        val drawingCanvasButton = findViewById<Button>(R.id.button_drawing_canvas)
-        val drawingCollageButton = findViewById<Button>(R.id.button_drawing_collage)
+        // Находим все карточки
+        val cardLessons = findViewById<CardView>(R.id.card_lessons)
+        val cardPalette = findViewById<CardView>(R.id.card_palette)
+        val cardIdeas = findViewById<CardView>(R.id.card_ideas)
+        val cardCanvas = findViewById<CardView>(R.id.card_canvas)
+        val cardCollage = findViewById<CardView>(R.id.card_collage)
 
-        learningMaterialsButton.setOnClickListener {
-            val intent = Intent(this, LearningMaterialsActivity::class.java)
-            startActivity(intent)
+        // Обработчики нажатий
+        cardLessons.setOnClickListener {
+            startActivity(Intent(this, LearningMaterialsActivity::class.java))
         }
 
-        colorCircleButton.setOnClickListener {
-            val intent = Intent(this, ColorCircleActivity::class.java)
-            startActivity(intent)
+        cardPalette.setOnClickListener {
+            startActivity(Intent(this, ColorCircleActivity::class.java))
         }
 
-        drawingIdeasButton.setOnClickListener {
-            val intent = Intent(this, DrawingIdeasActivity::class.java)
-            startActivity(intent)
+        cardIdeas.setOnClickListener {
+            startActivity(Intent(this, DrawingIdeasActivity::class.java))
         }
 
-        drawingCanvasButton.setOnClickListener {
-            val intent = Intent(this, DrawingCanvasActivity::class.java)
-            startActivity(intent)
+        cardCanvas.setOnClickListener {
+            startActivity(Intent(this, DrawingCanvasActivity::class.java))
         }
 
-        drawingCollageButton.setOnClickListener {
-            val intent = Intent(this, DrawingCollageActivity::class.java)
-            startActivity(intent)
+        cardCollage.setOnClickListener {
+            startActivity(Intent(this, DrawingCollageActivity::class.java))
         }
     }
 }
