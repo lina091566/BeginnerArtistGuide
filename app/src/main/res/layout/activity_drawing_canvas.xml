@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <!-- Панель инструментов -->
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -18,52 +17,18 @@
             android:padding="8dp"
             android:background="#EEEEEE">
 
-            <!-- Кнопки цветов -->
             <Button
-                android:id="@+id/btn_red"
+                android:id="@+id/btn_color_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Красный"
-                android:textColor="#FFFFFF"
-                android:background="#FF0000"
+                android:text="Палитра"
+                android:textSize="16sp"
                 android:layout_margin="4dp"
                 android:padding="8dp"
-                android:contentDescription="Красный" />
-
-            <Button
-                android:id="@+id/btn_blue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Синий"
+                android:background="#9C27B0"
                 android:textColor="#FFFFFF"
-                android:background="#0000FF"
-                android:layout_margin="4dp"
-                android:padding="8dp"
-                android:contentDescription="Синий" />
+                android:contentDescription="Выбор цвета из палитры" />
 
-            <Button
-                android:id="@+id/btn_green"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Зелёный"
-                android:textColor="#FFFFFF"
-                android:background="#00FF00"
-                android:layout_margin="4dp"
-                android:padding="8dp"
-                android:contentDescription="Зелёный" />
-
-            <Button
-                android:id="@+id/btn_yellow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Жёлтый"
-                android:textColor="#FFFFFF"
-                android:background="#FFFF00"
-                android:layout_margin="4dp"
-                android:padding="8dp"
-                android:contentDescription="Жёлтый" />
-
-            <!-- Ластик -->
             <Button
                 android:id="@+id/btn_eraser"
                 android:layout_width="wrap_content"
@@ -74,7 +39,6 @@
                 android:padding="8dp"
                 android:contentDescription="Ластик" />
 
-            <!-- Очистить -->
             <Button
                 android:id="@+id/btn_clear"
                 android:layout_width="wrap_content"
@@ -85,7 +49,6 @@
                 android:padding="8dp"
                 android:contentDescription="Очистить холст" />
 
-            <!-- Внутри LinearLayout с инструментами, после кнопки "Очистить" -->
             <Button
                 android:id="@+id/btn_save"
                 android:layout_width="wrap_content"
@@ -100,7 +63,6 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Холст для рисования -->
     <com.example.beginnerartistguide.DrawingView
         android:id="@+id/drawing_view"
         android:layout_width="match_parent"

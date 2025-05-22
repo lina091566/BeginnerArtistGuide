@@ -9,7 +9,5 @@ class LearningMaterialsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learning_materials)
 
-        // Здесь можно добавить код для загрузки статей из файла или базы данных
-        // Пока что просто отображаем текст из XML
     }
 }

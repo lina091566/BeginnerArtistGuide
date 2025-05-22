@@ -42,7 +42,6 @@ class DrawingCollageActivity : AppCompatActivity() {
         }
 
         for ((index, drawing) in drawings.withIndex()) {
-            // Основной контейнер для рисунка с рамкой
             val drawingContainer = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
                 layoutParams = LinearLayout.LayoutParams(
@@ -54,7 +53,6 @@ class DrawingCollageActivity : AppCompatActivity() {
                 background = createBeautifulBorder()
             }
 
-            // Контейнер для изображения с отступами
             val imageContainer = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
                 layoutParams = LinearLayout.LayoutParams(
@@ -64,7 +62,6 @@ class DrawingCollageActivity : AppCompatActivity() {
                 setPadding(8.dpToPx(), 8.dpToPx(), 8.dpToPx(), 8.dpToPx())
             }
 
-            // Само изображение
             val imageView = ImageView(this).apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
@@ -75,7 +72,6 @@ class DrawingCollageActivity : AppCompatActivity() {
                 adjustViewBounds = true
             }
 
-            // Кнопка удаления
             val deleteButton = Button(this).apply {
                 text = "УДАЛИТЬ"
                 layoutParams = LinearLayout.LayoutParams(
@@ -93,7 +89,6 @@ class DrawingCollageActivity : AppCompatActivity() {
                 }
             }
 
-            // Собираем все элементы
             imageContainer.addView(imageView)
             drawingContainer.addView(imageContainer)
             drawingContainer.addView(deleteButton)
@@ -108,7 +103,6 @@ class DrawingCollageActivity : AppCompatActivity() {
             .setPositiveButton("ДА") { _, _ ->
                 drawingManager.deleteDrawing(index)
                 this.container.removeView(container)
-                // Проверяем, остались ли рисунки после удаления
                 if (drawingManager.getDrawingCount() == 0) {
                     emptyStateText.visibility = View.VISIBLE
                 }

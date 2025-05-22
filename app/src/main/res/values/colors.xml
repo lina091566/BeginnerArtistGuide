@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Добавляем эти цвета если их нет -->
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="delete_button_color">#FF5252</color>
 
-    <!-- Остальные ваши цвета... -->
 
     <color name="card_yellow">#FFECB3</color>
     <color name="card_blue">#BBDEFB</color>
@@ -18,4 +16,5 @@
     <color name="text_dark_red">#C62828</color>
     <color name="text_dark_green">#2E7D32</color>
     <color name="text_dark_purple">#4527A0</color>
+    <color name="transparent">#00000000</color>
 </resources>

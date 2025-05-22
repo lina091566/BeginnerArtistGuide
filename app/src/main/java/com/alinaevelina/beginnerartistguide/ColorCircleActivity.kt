@@ -22,17 +22,14 @@ class ColorCircleActivity : AppCompatActivity() {
 
         val generateButton: Button = findViewById(R.id.buttonGenerate)
         generateButton.setOnClickListener {
-            // Удаляем все старые круги
             gridLayout.removeAllViews()
-            // Генерируем новые
             generateRandomColorCircles()
-            // Показываем сообщение
             Toast.makeText(this, "Новые цвета созданы!", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun generateRandomColorCircles() {
-        for (i in 0 until 6) { // Генерируем 6 цветных кругов
+        for (i in 0 until 6) {
             val colorHex = generateRandomColorHex()
             val colorCircle = createColorCircle(colorHex)
             colorCircle.setOnClickListener {

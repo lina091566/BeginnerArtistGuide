@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Заголовок Gallery -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +19,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Уведомление при пустой галерее -->
         <TextView
             android:id="@+id/empty_state_text"
             android:layout_width="match_parent"
@@ -31,7 +29,6 @@
             android:layout_marginTop="32dp"
             android:visibility="gone"/>
 
-        <!-- Контейнер для рисунков -->
         <LinearLayout
             android:id="@+id/drawing_container"
             android:layout_width="match_parent"

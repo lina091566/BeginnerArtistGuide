@@ -10,14 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Находим все карточки
         val cardLessons = findViewById<CardView>(R.id.card_lessons)
         val cardPalette = findViewById<CardView>(R.id.card_palette)
         val cardIdeas = findViewById<CardView>(R.id.card_ideas)
         val cardCanvas = findViewById<CardView>(R.id.card_canvas)
         val cardCollage = findViewById<CardView>(R.id.card_collage)
 
-        // Обработчики нажатий
         cardLessons.setOnClickListener {
             startActivity(Intent(this, LearningMaterialsActivity::class.java))
         }

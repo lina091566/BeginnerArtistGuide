@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@drawable/gradient_background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,31 +12,30 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Заголовок приложения -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Beginner Artist Guide"
-            android:textSize="24sp"
-            android:textColor="#333333"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
-            android:textStyle="bold"/>
+            android:layout_marginBottom="32dp"/>
 
-        <!-- Карточка 1: Учебные материалы -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_lessons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFECB3"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
             android:foreground="?selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_yellow"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -44,34 +43,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Учебные материалы"
+                    android:textColor="#1059CA"
                     android:textSize="20sp"
-                    android:textColor="#5D4037"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Основы рисования и полезные уроки"
+                    android:textColor="#4C83E7"
                     android:textSize="14sp"
-                    android:textColor="#5D4037"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Карточка 2: Рандомная палитра -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_palette"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#BBDEFB"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
             android:foreground="?selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_blue"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -79,34 +78,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Рандомная палитра"
-                    android:textSize="20sp"
                     android:textColor="#0D47A1"
+                    android:textSize="20sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Генерация цветовых сочетаний"
-                    android:textSize="14sp"
                     android:textColor="#0D47A1"
+                    android:textSize="14sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Карточка 3: Идеи для рисования -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_ideas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFCDD2"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
             android:foreground="?selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_red"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -114,34 +113,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Идеи для рисования"
+                    android:textColor="#9C27B0"
                     android:textSize="20sp"
-                    android:textColor="#C62828"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Вдохновляющие темы и сюжеты"
+                    android:textColor="#CF57E4"
                     android:textSize="14sp"
-                    android:textColor="#C62828"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Карточка 4: Холст для рисования -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_canvas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#C8E6C9"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
             android:foreground="?selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_green"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -149,34 +148,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Холст для рисования"
+                    android:textColor="#9B1B11"
                     android:textSize="20sp"
-                    android:textColor="#2E7D32"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Создавайте свои художественные работы"
+                    android:textColor="#AD463D"
                     android:textSize="14sp"
-                    android:textColor="#2E7D32"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Карточка 5: Коллаж рисунков -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_collage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#D1C4E9"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
             android:foreground="?selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gradient_purple"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -184,16 +183,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Коллаж рисунков"
-                    android:textSize="20sp"
                     android:textColor="#4527A0"
+                    android:textSize="20sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Просмотр и управление вашими работами"
-                    android:textSize="14sp"
                     android:textColor="#4527A0"
+                    android:textSize="14sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
